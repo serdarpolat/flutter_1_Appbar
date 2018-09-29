@@ -50,15 +50,84 @@ class _MyHomePageState extends State<MyHomePage> {
             onPressed: () {},
           ),
         ),
-        body: ListView(
-          children: <Widget>[
-            Card(
-              elevation: 10.0,
-              child: Column(children: <Widget>[
-                
-              ],),
-            ),
-          ],
+        body: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: ListView(
+            children: <Widget>[
+              Card(
+                elevation: 10.0,
+                child: Column(
+                  children: <Widget>[
+                    Image.asset(
+                      'images/m1.jpg',
+                      width: double.infinity,
+                      height: 150.0,
+                      fit: BoxFit.cover,
+                    ),
+                    Row(
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.all(15.0),
+                          child: Container(
+                            padding: EdgeInsets.all(10.0),
+                            decoration: BoxDecoration(
+                              color: Colors.orangeAccent,
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(10.0)),
+                            ),
+                            child: Icon(
+                              Icons.bubble_chart,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text(
+                                'Mobile Conferance',
+                                style: TextStyle(
+                                  fontSize: 20.0,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                'at 12:30 PM - London',
+                                textDirection: TextDirection.ltr,
+                                textAlign: TextAlign.left,
+                                style: TextStyle(
+                                  fontSize: 14.0,
+                                  fontWeight: FontWeight.w300,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(15.0),
+                          child: Column(
+                            children: <Widget>[
+                              Icon(
+                                Icons.favorite_border,
+                                color: Colors.red,
+                                size: 26.0,
+                              ),
+                              Text(
+                                '122',
+                                style: TextStyle(
+                                    fontSize: 12.0, color: Colors.black54),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
