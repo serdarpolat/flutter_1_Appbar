@@ -28,8 +28,8 @@ class _MyHomePageState extends State<MyHomePage> {
     return Container(
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('images/bg_pattern.jpg'),
-          fit: BoxFit.fitHeight,
+          image: AssetImage('images/bg_pattern1.jpg'),
+          fit: BoxFit.cover,
         ),
       ),
       child: Scaffold(
@@ -50,7 +50,16 @@ class _MyHomePageState extends State<MyHomePage> {
             onPressed: () {},
           ),
         ),
-        body: Container(),
+        body: ListView(
+          children: <Widget>[
+            Card(
+              elevation: 10.0,
+              child: Column(children: <Widget>[
+                
+              ],),
+            ),
+          ],
+        ),
       ),
     );
   }
