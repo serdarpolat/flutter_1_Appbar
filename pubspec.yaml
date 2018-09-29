@@ -40,6 +40,11 @@ flutter:
   assets:
    - images/bg_pattern.jpg
    - images/bg_pattern1.jpg
+   - images/m1.jpg
+   - images/m2.jpg
+   - images/m3.png
+   - images/m4.jpg
+   - images/m5.jpg
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
