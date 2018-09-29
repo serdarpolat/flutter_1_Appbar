@@ -25,24 +25,32 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text(
-          'AppBar Title',
-          style: TextStyle(color: Colors.black87),
-        ),
-        elevation: 0.0,
-        backgroundColor: Colors.transparent,
-        leading: IconButton(
-          icon: Icon(
-            Icons.menu,
-            color: Colors.black87,
-          ),
-          onPressed: () {},
+    return Container(
+      decoration: BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage('images/bg_pattern.jpg'),
         ),
       ),
-      body: Container(),
+      child: Scaffold(
+        backgroundColor: Colors.transparent,
+        appBar: AppBar(
+          centerTitle: true,
+          title: Text(
+            'AppBar Title',
+            style: TextStyle(color: Colors.black87),
+          ),
+          elevation: 0.0,
+          backgroundColor: Colors.transparent,
+          leading: IconButton(
+            icon: Icon(
+              Icons.menu,
+              color: Colors.black87,
+            ),
+            onPressed: () {},
+          ),
+        ),
+        body: Container(),
+      ),
     );
   }
 }
