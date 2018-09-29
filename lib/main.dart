@@ -29,6 +29,7 @@ class _MyHomePageState extends State<MyHomePage> {
       decoration: BoxDecoration(
         image: DecorationImage(
           image: AssetImage('images/bg_pattern.jpg'),
+          fit: BoxFit.fitHeight,
         ),
       ),
       child: Scaffold(
@@ -37,14 +38,14 @@ class _MyHomePageState extends State<MyHomePage> {
           centerTitle: true,
           title: Text(
             'AppBar Title',
-            style: TextStyle(color: Colors.black87),
+            style: TextStyle(color: Colors.white),
           ),
           elevation: 0.0,
           backgroundColor: Colors.transparent,
           leading: IconButton(
             icon: Icon(
               Icons.menu,
-              color: Colors.black87,
+              color: Colors.white,
             ),
             onPressed: () {},
           ),
