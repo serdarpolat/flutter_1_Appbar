@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
@@ -49,6 +48,22 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             onPressed: () {},
           ),
+          actions: <Widget>[
+            IconButton(
+              icon: Icon(
+                Icons.settings,
+                color: Colors.white,
+              ),
+              onPressed: () {},
+            ),
+            IconButton(
+              icon: Icon(
+                Icons.more_vert,
+                color: Colors.white,
+              ),
+              onPressed: () {},
+            ),
+          ],
         ),
         body: Padding(
           padding: const EdgeInsets.all(10.0),
@@ -133,3 +148,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
